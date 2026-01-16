@@ -1,0 +1,1889 @@
+Using GPU and no quantization.
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: mps
+Quantization: None (full precision)
+Expected memory: ~2.5 GB (FP16)
+Number of subjects: 2
+======================================================================
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 121
+Overall Accuracy: 48.02%
+Duration: 0.5 minutes
+======================================================================
+
+Using CPU and no quantization.
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cpu
+Quantization: None (full precision)
+Expected memory: ~5 GB (FP32)
+Number of subjects: 2
+======================================================================
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 120
+Overall Accuracy: 47.62%
+Duration: 1.3 minutes
+======================================================================
+
+Using CPU and 4-bit quantization.
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cpu
+Quantization: 4-bit
+Expected memory: ~1.5 GB
+Number of subjects: 2
+======================================================================
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Quantization: 4-bit
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 112
+Overall Accuracy: 44.44%
+Duration: 2.8 minutes
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  63%|███████████████████████████                | 109/173 [00:14<00:05, 11.59it/s]
+──────────────────────────────────────────────────────────────────────
+Question 110/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The rate of blood lactate accumulation is determined by:
+
+Choices:
+  →  A. the rate of muscle lactate production and the rate of muscle lactate efflux.
+     B. the rate of anaerobic glycolysis.
+     C. the rate of muscle glucose uptake.
+   ★ D. the difference between the rate of lactate appearance and the rate of lactate clearance.
+
+Model Answer: A | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 111/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Type I muscle fibres have the following characteristics:
+
+Choices:
+  →  A. white, glycolytic, slow contracting.
+     B. white, oxidative, slow contracting.
+     C. red, oxidative, fast contracting.
+   ★ D. red, oxidative, slow contracting.
+
+Model Answer: A | Correct Answer: D
+Testing college_medicine:  64%|███████████████████████████▌               | 111/173 [00:14<00:05, 11.99it/s]
+──────────────────────────────────────────────────────────────────────
+Question 112/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: If a gas occupies 0.1L at 200atm, what will its volume be at 1atm?
+
+Choices:
+   ★ A. slightly less than 20L
+     B. 20L
+  →  C. slightly more than 20L
+     D. 2000L
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 113/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Assuming the circulatory system in humans obeys Bernoulli’s principle of fluid dynamics, which of the statements most accurately compares the blood pressure in a capillary of the neck to a capillary with an equal crosssectional area in the right knee?
+
+Choices:
+     A. The pressure in the neck is greater than the pressure in the knee because of the increase in pressure head
+     B. The pressure in the neck is equal to the pressure in the knee because of the equal dynamic pressure according to the continuity equation
+  →★ C. The pressure in the knee is greater than the pressure in the neck because of the increase in pressure head
+     D. An accurate comparison cannot be given without knowledge of the fluid’s density and viscosity
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  65%|████████████████████████████               | 113/173 [00:15<00:05, 10.72it/s]
+──────────────────────────────────────────────────────────────────────
+Question 114/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Sodium bicarbonate ingestion improves middle distance running performance by:
+
+Choices:
+   ★ A. elevating the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+     B. reducing the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+  →  C. elevating the pH and buffering capacity of the extracellular fluid allowing a faster influx of hydrogen ions into muscle.
+     D. elevating the pre-exercise muscle pH.
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 115/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: An individual presents to the clinic for initial evaluation and establishment of care. The patient was born 46, XY, but identifies as a female. Her preferred pronouns are She/Her. Additionally, she is sexually active with females only. What would describe the gender and orientation of this individual?
+
+Choices:
+     A. Cis-gender, heterosexual
+  →  B. Transgender, heterosexual
+     C. Cis-gender, homosexual
+   ★ D. Transgender, homosexual
+
+Model Answer: B | Correct Answer: D
+Testing college_medicine:  66%|████████████████████████████▌              | 115/173 [00:15<00:05, 10.25it/s]
+──────────────────────────────────────────────────────────────────────
+Question 116/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following can act as an intracellular buffer to limit pH changes when the rate of glycolysis is high?
+
+Choices:
+     A. Glutamine
+  →  B. Glucose
+   ★ C. Carnosine
+     D. Amylase
+
+Model Answer: B | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 117/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A team of engineers constructing signal lights for airplanes that they can use to guide them to runways are attempting to determine the brightness needed for the pilot to be able to detect the tower at 1 mile away. They set the light to a test brightness and establish communication with an inbound pilot. When the pilot is 1 mile away from the tower, he says he cannot see the light. In terms of Signal Detection Theory, what would this be called?
+
+Choices:
+     A. Hit
+   ★ B. Miss
+  →  C. False alarm
+     D. Correct rejection
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  68%|█████████████████████████████              | 117/173 [00:15<00:05, 10.51it/s]
+──────────────────────────────────────────────────────────────────────
+Question 118/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?
+
+Choices:
+   ★ A. Subculture
+     B. Counterculture
+  →  C. Microculture
+     D. Culture lag
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 119/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Prosthetic groups are:
+
+Choices:
+     A. required by all enzymes in the cell.
+     B. loosely bound to enzymes via hydrogen bonds.
+  →  C. sites on the enzyme molecule that permit allosteric modification of enzyme activity.
+   ★ D. tightly bound to enzymes and are required for their activity.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  69%|█████████████████████████████▌             | 119/173 [00:15<00:05, 10.76it/s]
+──────────────────────────────────────────────────────────────────────
+Question 120/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Codons are composed of:
+
+Choices:
+   ★ A. triplet sequences of nucleotide bases in mRNA or DNA .
+     B. quadruplet sequences of nucleotide bases in mRNA or DNA.
+  →  C. triplet sequences of amino acids in polypeptide chains.
+     D. triplet sequences of deoxyribose sugars in DNA.
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 121/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: In games like soccer the blood lactate concentration:
+
+Choices:
+     A. rarely increases above 3 mM.
+   ★ B. is usually lower at the end of the game than at the end of the first half.
+  →  C. is usually higher at the end of the game than at the end of the first half.
+     D. increases throughout the course of the game as the players become more fatigued.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  70%|██████████████████████████████             | 121/173 [00:15<00:04, 10.96it/s]
+──────────────────────────────────────────────────────────────────────
+Question 122/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: All of the following are true regarding the function of neurons EXCEPT:
+
+Choices:
+     A. Hyperpolarization at the end of an action potential is one mechanism by which neurons limit the rate at which action potentials may fire.
+     B. The flow of sodium into the neuron depolarizes the membrane in the first phase of an action potential.
+  →★ C. The transmitting neuron secretes neurotransmitters into the synaptic cleft from its dendrites.
+     D. An action potential is initiated when the axon hillock reaches the threshold potential.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 123/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following is true?
+
+Choices:
+     A. Increasing the protein intake above 3 grams per kg body mass per day will stimulate muscle growth and increase strength.
+  →★ B. Creatine supplements can increase muscle strength and power.
+     C. Amino acid supplements can increase muscle strength and power.
+     D. Muscle damage is induced by shortening contractions.
+
+Model Answer: B | Correct Answer: B
+Testing college_medicine:  71%|██████████████████████████████▌            | 123/173 [00:15<00:04, 10.58it/s]
+──────────────────────────────────────────────────────────────────────
+Question 124/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following statements is false?
+
+Choices:
+     A. Ammonia is produced in repeated high intensity exercise.
+   ★ B. Muscle lactate accumulation does not begin until at least 5 seconds of intermittent muscle contractions have taken place.
+  →  C. Muscle phosphocreatine depletion begins in the first few seconds of high intensity exercise.
+     D. With an increasing number of repeated sprints the rate of accumulation of lactate in muscle declines.
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 125/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The most rapid method to resynthesize ATP during exercise is through:
+
+Choices:
+     A. glycolysis.
+   ★ B. phosphocreatine breakdown.
+  →  C. tricarboxylic acid cycle (Krebs' cycle).
+     D. glycogenolysis.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  72%|███████████████████████████████            | 125/173 [00:16<00:04, 10.70it/s]
+──────────────────────────────────────────────────────────────────────
+Question 126/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The electron transport chain, which is embedded in the mitochondrial membrane, exists primarily to generate new molecules of ATP for use by the cell. This is accomplished by a positive gradient of H+ ions that are formed outside the membrane which then pass back through a specialized channel known as ATP synthase. The energy created from this phosphorylates an ATP to an ATP, known as oxidative phosphorylation. The mechanism by which H+ returns to the inside of the mitochondria is known as what?
+
+Choices:
+   ★ A. Passive transport
+     B. Passive diffusion
+  →  C. Active transport
+     D. Endocytosis
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 127/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following molecules will stop being produced first when oxygen is no longer supplied to the cell?
+
+Choices:
+     A. Oxaloacetate
+  →  B. Pyruvate
+   ★ C. Water
+     D. Adenosine triphosphate
+
+Model Answer: B | Correct Answer: C
+Testing college_medicine:  73%|███████████████████████████████▌           | 127/173 [00:16<00:04, 10.52it/s]
+──────────────────────────────────────────────────────────────────────
+Question 128/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: As a result of substance abuse throughout adolescence, a young adult suffers from a number of psychological symptoms reflecting diminished executive functioning. Which of the following are likely true of this patient?
+I. Pathological changes to the prefrontal cortex.
+II. Increased susceptibility to auditory hallucinations.
+III. Reduced behavioral impulse control.
+
+Choices:
+     A. I only
+     B. III only
+   ★ C. I and III only
+  →  D. II and III only
+
+Model Answer: D | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 129/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Glycogen breakdown in muscle initially results in the formation of:
+
+Choices:
+     A. glucose.
+   ★ B. glucose-1-phosphate.
+  →  C. glucose-6-phosphate.
+     D. glucose-1,6-diphosphate.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  75%|████████████████████████████████           | 129/173 [00:16<00:04, 10.77it/s]
+──────────────────────────────────────────────────────────────────────
+Question 130/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: A wrestler attempting to lose weight for a match in December commits himself to dropping 30lbs over 2 months. Which of the following is NOT a good method to restrict his caloric intake?
+
+Choices:
+     A. Study at a health smoothie store instead of a coffee shop.
+     B. Reward himself with a savory meal every Saturday for meeting his calorie goals.
+     C. Snap himself with a rubber band when he eats a high calorie snack.
+  →★ D. Hide snack food out of sight within his house.
+
+Model Answer: D | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 131/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: In an SDS-PAGE procedure, the SDS serves as a detergent. Why are the proteins treated with a detergent before being run through the electrophoresis gel?
+
+Choices:
+     A. To coat the proteins with a large positive charge, since amino acid side chains may have positive, negative, or neutral charges, and a large uniform charge is necessary to get good separation in the gel.
+   ★ B. To allow the electrophoresis to separate the proteins solely on the basis of the length of the primary sequence.
+  →  C. To prevent the protein from denaturing so that the electrophoresis can accurately resolve the proteins on the basis of tertiary structure.
+     D. To break the intramolecular bonds holding the tertiary and primary structure of the protein together, thereby generating linear fragments that may be sorted on size.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  76%|████████████████████████████████▌          | 131/173 [00:16<00:04,  8.94it/s]
+──────────────────────────────────────────────────────────────────────
+Question 132/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: For very high force contractions lasting 1-2 seconds, the initial energy source is from:
+
+Choices:
+     A. Glycolysis.
+     B. creatine phosphorylation.
+  →  C. phosphocreatine stores.
+   ★ D. ATP stores.
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 133/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following factors does not influence success in sport?
+
+Choices:
+     A. Ability to tolerate heavy training without succumbing to illness or injury.
+  →  B. Tactics.
+     C. The diet.
+   ★ D. Ingestion of carnitine during exercise.
+
+Model Answer: B | Correct Answer: D
+Testing college_medicine:  77%|█████████████████████████████████          | 133/173 [00:16<00:04,  9.81it/s]
+──────────────────────────────────────────────────────────────────────
+Question 134/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm
+
+Choices:
+   ★ A. I only
+     B. II only
+  →  C. III only
+     D. I and II
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 135/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A transmembrane protein being isolated in the laboratory is found to be composed of four different amino acids in varying quantity. They are, in order of frequency, glycine, tyrosine, arginine, and isoleucine. Of these amino acids, which is most likely to be inside the transmembrane domain?
+
+Choices:
+     A. Glycine
+  →  B. Tyrosine
+     C. Arginine
+   ★ D. Isoleucine
+
+Model Answer: B | Correct Answer: D
+Testing college_medicine:  78%|█████████████████████████████████▌         | 135/173 [00:17<00:03, 10.14it/s]
+──────────────────────────────────────────────────────────────────────
+Question 136/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following nucleotide bases is not found in RNA?
+
+Choices:
+   ★ A. Thymine
+     B. Adenine
+  →  C. Uracil
+     D. Guanine
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 137/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Fast-twitch fibres contain:
+
+Choices:
+     A. a relatively large number of mitochondria and low ATPase activity.
+     B. a relatively small number of mitochondria and low ATPase activity.
+  →★ C. a relatively small number of mitochondria and high ATPase activity.
+     D. a relatively large number of mitochondria and high ATPase activity.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  79%|██████████████████████████████████         | 137/173 [00:17<00:03, 10.73it/s]
+──────────────────────────────────────────────────────────────────────
+Question 138/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The conversion of one molecule of glucose to two molecules of pyruvate results in the net formation of:
+
+Choices:
+     A. six molecules of water.
+   ★ B. two molecules of ATP.
+  →  C. three molecules of ATP.
+     D. thirty-eight molecules of ATP.
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 139/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Acute Myeloid Leukemia is a malignant cancer in which myeloid progenitor cells become rapidly dividing and retain their semi-stem cell state. Under normal circumstances, which of the following cell types would arise from this stem cell?
+
+Choices:
+     A. NK cell
+   ★ B. Platelet
+  →  C. T cell
+     D. Lymphoid progenitor
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  80%|██████████████████████████████████▌        | 139/173 [00:17<00:03, 10.96it/s]
+──────────────────────────────────────────────────────────────────────
+Question 140/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Lactate and hydrogen ions leave the muscle:
+
+Choices:
+     A. via a cotransport mechanism with carnosine.
+  →  B. via an active transport mechanism.
+   ★ C. via a protein transporter molecule.
+     D. by simple diffusion.
+
+Model Answer: B | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 141/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: There are five stages of mitosis that must be carried out correctly for a cell to properly divide. Match the stage of mitosis with its proper component:
+Prophase — Dissolution of nucleoli
+
+Choices:
+  →★ A. Metaphase — Formation of two distinct nuclear membranes
+     B. Cytokinesis — Separation of sister chromatids to their respective poles
+     C. Telophase — Formation of the equatorial plate
+     D. Anaphase — Separation of the cytoplasm and organelles
+
+Model Answer: A | Correct Answer: A
+Testing college_medicine:  82%|███████████████████████████████████        | 141/173 [00:17<00:02, 11.30it/s]
+──────────────────────────────────────────────────────────────────────
+Question 142/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: A study examined admissions to exceptionally selective colleges. When examining the correlates of admission acceptance, two obvious factors that strongly correlated with admissions were GPA and standardized test scores, with correlation values of +0.41 and +0.55 respectively. However, the study also demonstrated that those students who had social networks that overlapped with the alumni networks of the selective colleges were even more likely to be admitted, with a correlation between social network and alumni network of +0.61. This correlation demonstrates:
+
+Choices:
+     A. the value of cultural capital.
+     B. a meritocracy. 
+  →★ C. he value of social capital.
+     D. a false association.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 143/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A patient comes into the hospital after being bit by a dog who he stated was “acting crazy”. The wound is open and bleeding. Animal control captured the dog and said that it was foaming at the mouth and extremely aggressive. Suspecting a rabies infection, the patient is given a serum that contains rabies antibodies that were grown inside a horse. This is an example of what kind of immunity?
+
+Choices:
+   ★ A. Passive
+  →  B. Active
+     C. Natural
+     D. Artificial
+
+Model Answer: B | Correct Answer: A
+Testing college_medicine:  83%|███████████████████████████████████▌       | 143/173 [00:17<00:02, 10.13it/s]
+──────────────────────────────────────────────────────────────────────
+Question 144/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The World Systems Theory divides the world as a unit into three subcategories: core countries, periphery countries, and semi-periphery countries. Which of the following answers correlates best with semi-periphery countries?
+
+Choices:
+     A. Strong central government.
+     B. An economy centralized around one natural resource.
+  →★ C. A diversified and developed economy.
+     D. Small percentage of very high class individuals.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 145/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Kinase reactions:
+
+Choices:
+     A. inhibit ATP breakdown.
+   ★ B. involve the addition or removal of a phosphate group.
+  →  C. involve the addition or removal of a ketone group.
+     D. involve the addition or removal of an amino acid to a polypeptide chain.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  84%|████████████████████████████████████       | 145/173 [00:18<00:02, 10.53it/s]
+──────────────────────────────────────────────────────────────────────
+Question 146/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The main fate of lactate that leaves muscle and enters the circulation is:
+
+Choices:
+     A. conversion to urea in the liver.
+     B. conversion to glucose in the heart.
+  →  C. excretion via the kidneys.
+   ★ D. uptake and oxidation by other tissues.
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 147/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The ATP store in muscle can only supply energy in high intensity exercise for about:
+
+Choices:
+     A. 2 milliseconds.
+   ★ B. 2 seconds.
+  →  C. 10 seconds.
+     D. 20 seconds.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  85%|████████████████████████████████████▌      | 147/173 [00:18<00:02, 11.48it/s]
+──────────────────────────────────────────────────────────────────────
+Question 148/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Glycogen breakdown in exercising muscle is activated by:
+
+Choices:
+     A. insulin.
+     B. cortisol.
+     C. increased pH.
+  →★ D. none of the above.
+
+Model Answer: D | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 149/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: According to attachment theory, which of the following children is most likely to attach to a male psychologist, previously unknown to the child, in the course of a psychological study?
+
+Choices:
+   ★ A. A two month old female infant raised in a safe, stable environment
+     B. A five month old male infant raised in a safe, stable environment
+  →  C. An eight month old male infant raised by a single caregiver who frequently neglect the child
+     D. A thirteen month old female infant raised by two caregivers who occasionally neglect the child
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  86%|█████████████████████████████████████      | 149/173 [00:18<00:02, 11.38it/s]
+──────────────────────────────────────────────────────────────────────
+Question 150/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Creatine is synthesized from:
+
+Choices:
+  →  A. amino acids in the muscles.
+   ★ B. amino acids in the liver.
+     C. amino acids in the kidneys.
+     D. creatinine in the kidneys.
+
+Model Answer: A | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 151/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The hypothalamus controls the stress response of the body by releasing CRF, which leads to eventual release of cortisol, the body’s stress hormone, systemically. This trigger is eventually suppressed by which mechanism?
+
+Choices:
+     A. Constriction of blood flow to the adrenal gland.
+     B. Exhaustion of the body’s store of CRF.
+  →★ C. Negative feedback loop of cortisol.
+     D. Release of CRF-inhibitory factor.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  87%|█████████████████████████████████████▌     | 151/173 [00:18<00:01, 11.46it/s]
+──────────────────────────────────────────────────────────────────────
+Question 152/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:
+I. Self-esteem hypothesis
+II. Contact hypothesis
+III. Hypothesis
+IV. Legal hypothesis
+
+Choices:
+     A. I, II, and III
+     B. II, III, and IV
+  →  C. I, III, and IV
+   ★ D. I, II, and IV
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 153/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The energy for all forms of muscle contraction is provided by:
+
+Choices:
+   ★ A. ATP.
+     B. ADP.
+     C. phosphocreatine.
+  →  D. oxidative phosphorylation.
+
+Model Answer: D | Correct Answer: A
+Testing college_medicine:  88%|██████████████████████████████████████     | 153/173 [00:18<00:01, 11.01it/s]
+──────────────────────────────────────────────────────────────────────
+Question 154/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: How can several different proteins be produced from the same gene?
+
+Choices:
+     A. By selective transcription of different parts of the DNA in the gene.
+     B. By doubling or tripling the length of the mRNA molecule produced from the primary transcript.
+  →★ C. The primary transcripts of many genes can be spliced in various ways to produce different mRNAs, a process known as alternative RNA splicing.
+     D. By splicing of the mRNA molecule after it has been formed from the primary transcript.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 155/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Phosphocreatine in the muscle cell is found in:
+
+Choices:
+     A. the mitochondria.
+     B. all subcellular compartments.
+  →  C. the sarcolemma.
+   ★ D. the cytoplasm.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  90%|██████████████████████████████████████▌    | 155/173 [00:18<00:01, 10.90it/s]
+──────────────────────────────────────────────────────────────────────
+Question 156/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A scientist using mouse models to determine the response of blood hormones to large levels of glucose in the body discovers a new hormone not previously described. According to his data, this hormone is found both inside and out of cells when carrying out its function, increase the amount of nucleic acid in the cell while functioning, and are derived from a structure containing four hydroxycarbon rings. This will likely be categorized as which type of hormone?
+
+Choices:
+     A. Enzymatic
+   ★ B. Steroid
+  →  C. Peptide
+     D. Amino acid
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 157/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The coding sequences of genes are called:
+
+Choices:
+     A. extrons.
+   ★ B. exons.
+  →  C. introns.
+     D. codons.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  91%|███████████████████████████████████████    | 157/173 [00:19<00:01, 11.07it/s]
+──────────────────────────────────────────────────────────────────────
+Question 158/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Each of the following is an example of the transmission of knowledge through symbolic culture EXCEPT:
+I. A young macaque monkey learning to rinse off food in the ocean from an older monkey, even when the food is not covered in dirt or sand.
+II. A child learning the rules of baseball from a parent.
+III. A new group of inductees in a military organization experiencing hazing rituals from older students, which they then later carry out on new recruits.
+
+Choices:
+   ★ A. I only
+     B. III only
+  →  C. I and III only
+     D. II and III only
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 159/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: One of the many reasons that the eukaryotic cell can possess so much information in its DNA is the ability to condense coding regions when they are not being expressed. When acting on DNA, which of the following processes will usually lead to a decrease in gene expression?
+
+Choices:
+     A. Increased histone acetyltransferase activity
+  →  B. Decrease in histone deacetyltransferase activity
+   ★ C. Increase in methylation activity
+     D. Increase in heterochromatin:euchromatin ratio
+
+Model Answer: B | Correct Answer: C
+Testing college_medicine:  92%|███████████████████████████████████████▌   | 159/173 [00:19<00:01, 10.18it/s]
+──────────────────────────────────────────────────────────────────────
+Question 160/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Anaerobic metabolism refers to the generation of ATP:
+
+Choices:
+     A. without the involvement of ADP.
+     B. without the use of glycogen.
+  →★ C. without the use of oxygen.
+     D. in the absence of available oxygen.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 161/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following molecules does not form part of DNA?
+
+Choices:
+     A. Purine
+     B. Pyrimidine
+  →  C. Deoxyribose
+   ★ D. Amino acid
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  93%|████████████████████████████████████████   | 161/173 [00:19<00:01, 10.86it/s]
+──────────────────────────────────────────────────────────────────────
+Question 162/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: How many electrons does gold (Au) possess that have a quantum number l = 2?
+
+Choices:
+     A. 9
+     B. 23
+  →★ C. 29
+     D. 79
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 163/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Sauna use, sometimes referred to as "sauna bathing," is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+According to the article, which of the following is NOT a benefit of sauna use?
+
+Choices:
+     A. Decreased risk of heart attacks.
+     B. Increase in stroke volume.
+  →  C. Improved mental health.
+   ★ D. Decreased rate of erectile dysfunction.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  94%|████████████████████████████████████████▌  | 163/173 [00:20<00:01,  5.40it/s]
+──────────────────────────────────────────────────────────────────────
+Question 164/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: With an increasing number of sprints the:
+
+Choices:
+     A. anaerobic contribution progressively increases.
+  →  B. pH of the muscle falls below 6.0.
+     C. blood glucose concentration falls below 3 mmol/L.
+   ★ D. relative contribution of aerobic metabolism increases.
+
+Model Answer: B | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 165/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Fire hoses always have a nozzle on the end of the hose, which in part works by decreasing the area of the water exiting the fire hydrant to create a more forceful stream. If the starting velocity of water from a fire hydrant is 2 m/s, pressure is kept constant, and the end of the nozzle is 1/3 the area of the start of the hose, what is the final velocity of water as it exits?
+
+Choices:
+     A. 2 m/s
+     B. 8 m/s
+  →  C. 5 m/s
+   ★ D. 6 m/s
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  95%|█████████████████████████████████████████  | 165/173 [00:20<00:01,  6.35it/s]
+──────────────────────────────────────────────────────────────────────
+Question 166/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Pairs of electrons carried in the form, FADH2 and NADH+H, collectively contain enough free energy to rephosphorylate:
+
+Choices:
+     A. 6 ATP.
+   ★ B. 5 ATP.
+  →  C. 4 ATP.
+     D. 3 ATP.
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 167/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The energy released from the breakdown of the high-energy phosphates, ATP and phosphocreatine, can sustain maximal exertion exercise for about:
+
+Choices:
+     A. 1-2 seconds.
+   ★ B. 5-10 seconds.
+  →  C. 30-40 seconds.
+     D. 50-60 seconds.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  97%|█████████████████████████████████████████▌ | 167/173 [00:20<00:00,  7.44it/s]
+──────────────────────────────────────────────────────────────────────
+Question 168/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The sex of a child is dictated by the inheritance of:
+
+Choices:
+     A. the number of X chromosomes from the mother.
+     B. a recessive allele on the X chromosome.
+  →  C. a single Y chromosome from the mother.
+   ★ D. a single Y chromosome from the father.
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 169/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:
+
+Choices:
+   ★ A. frequently rises by 1 - 3 mM.
+     B. remains relatively unchanged.
+  →  C. frequently falls by 1 - 3 mM.
+     D. falls to hypoglycaemic levels.
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  98%|██████████████████████████████████████████ | 169/173 [00:20<00:00,  8.50it/s]
+──────────────────────────────────────────────────────────────────────
+Question 170/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: During DNA replication, mistakes are coded into the leading strand about once every 100,000/1 million copies. This DNA is subject to proofreading by several mechanisms. If a mistake is noted and the incorrect base is removed shortly following the time RNA primer is removed, this would most likely be the work of which repair mechanism?
+
+Choices:
+   ★ A. DNA polymerase I
+     B. DNA polymerase III
+  →  C. Mismatch repair mechanism
+     D. Endonuclease repair
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 171/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following statements is false?
+
+Choices:
+     A. Phosphofructokinase is the rate limiting enzyme in glycolysis.
+     B. Phosphorylase activity is higher in Type II fibres than in Type I fibres.
+  →  C. Endurance training increases the amount of TCA cycle enzymes in muscle.
+   ★ D. Oxygen is consumed in the TCA cycle.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  99%|██████████████████████████████████████████▌| 171/173 [00:21<00:00,  8.81it/s]
+──────────────────────────────────────────────────────────────────────
+Question 172/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Each of the following are aspects of the McDonaldization of Society EXCEPT:
+
+Choices:
+     A. Rationalization of decisions into cost/benefit analysis structures and away from traditional modes of thinking
+     B. Bureaucratic organization that formalizes well-establish division of labor and impersonal structures
+  →★ C. A dissolution of hierarchical modes of authority into collaborative teambased decision protocols
+     D. An intense effort on achieving sameness across diverse markets
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 173/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The descending loop of Henle of the nephron of the kidney is permeable to which of the following substances?
+
+Choices:
+     A. Na+
+  →★ B. H2O
+     C. K+
+     D. Cl-
+
+Model Answer: B | Correct Answer: B
+Testing college_medicine: 100%|███████████████████████████████████████████| 173/173 [00:21<00:00,  8.15it/s]
+
+✓ Result: 53/173 correct = 30.64%
+  Subject timing:
+  Real Time (Wall Clock): 21.17 seconds
+  CPU Time: 9.90 seconds
+  GPU Time: N/A (MPS does not support precise GPU timing)
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: allenai/OLMo-2-0425-1B
+None (full precision)
+Total Subjects: 10
+Total Questions: 1369
+Total Correct: 476
+Overall Accuracy: 34.77%
+
+──────────────────────────────────────────────────────────────────────
+TIMING INFORMATION
+──────────────────────────────────────────────────────────────────────
+  Real Time (Wall Clock): 2.19 minutes (131.68 seconds)
+  CPU Time: 1.13 minutes (68.01 seconds)
+  GPU Time: N/A (MPS does not support precise GPU timing)
+
+  Total Wall Clock Duration: 2.35 minutes (141.23 seconds)
+
+  Throughput: 10.40 questions/second
+  Average time per question: 0.10 seconds
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260115_161653.json
+
+📊 Top 5 Subjects:
+  1. anatomy: 44.44%
+  2. college_biology: 38.89%
+  3. astronomy: 38.82%
+  4. business_ethics: 38.00%
+  5. clinical_knowledge: 33.21%
+
+📉 Bottom 5 Subjects:
+  1. college_chemistry: 33.00%
+  2. abstract_algebra: 32.00%
+  3. college_medicine: 30.64%
+  4. college_mathematics: 29.00%
+  5. college_computer_science: 28.00%
+
+Step 5
+
+──────────────────────────────────────────────────────────────────────
+Question 109/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: A fundamental cause of fatigue in high intensity exercise is:
+
+Choices:
+     A. a fall in the cell concentration of ADP.
+     B. inhibition of ATP production.
+  →★ C. failure of the ATP supply to match the demand.
+     D. lack of skill.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  63%|███████████████████████████                | 109/173 [00:08<00:03, 16.94it/s]
+──────────────────────────────────────────────────────────────────────
+Question 110/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The rate of blood lactate accumulation is determined by:
+
+Choices:
+  →  A. the rate of muscle lactate production and the rate of muscle lactate efflux.
+     B. the rate of anaerobic glycolysis.
+     C. the rate of muscle glucose uptake.
+   ★ D. the difference between the rate of lactate appearance and the rate of lactate clearance.
+
+Model Answer: A | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 111/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Type I muscle fibres have the following characteristics:
+
+Choices:
+  →  A. white, glycolytic, slow contracting.
+     B. white, oxidative, slow contracting.
+     C. red, oxidative, fast contracting.
+   ★ D. red, oxidative, slow contracting.
+
+Model Answer: A | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 112/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: If a gas occupies 0.1L at 200atm, what will its volume be at 1atm?
+
+Choices:
+   ★ A. slightly less than 20L
+     B. 20L
+  →  C. slightly more than 20L
+     D. 2000L
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  65%|███████████████████████████▊               | 112/173 [00:08<00:03, 17.68it/s]
+──────────────────────────────────────────────────────────────────────
+Question 113/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Assuming the circulatory system in humans obeys Bernoulli’s principle of fluid dynamics, which of the statements most accurately compares the blood pressure in a capillary of the neck to a capillary with an equal crosssectional area in the right knee?
+
+Choices:
+     A. The pressure in the neck is greater than the pressure in the knee because of the increase in pressure head
+     B. The pressure in the neck is equal to the pressure in the knee because of the equal dynamic pressure according to the continuity equation
+  →★ C. The pressure in the knee is greater than the pressure in the neck because of the increase in pressure head
+     D. An accurate comparison cannot be given without knowledge of the fluid’s density and viscosity
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 114/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Sodium bicarbonate ingestion improves middle distance running performance by:
+
+Choices:
+  →★ A. elevating the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+     B. reducing the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+     C. elevating the pH and buffering capacity of the extracellular fluid allowing a faster influx of hydrogen ions into muscle.
+     D. elevating the pre-exercise muscle pH.
+
+Model Answer: A | Correct Answer: A
+Testing college_medicine:  66%|████████████████████████████▎              | 114/173 [00:08<00:03, 16.50it/s]
+──────────────────────────────────────────────────────────────────────
+Question 115/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: An individual presents to the clinic for initial evaluation and establishment of care. The patient was born 46, XY, but identifies as a female. Her preferred pronouns are She/Her. Additionally, she is sexually active with females only. What would describe the gender and orientation of this individual?
+
+Choices:
+     A. Cis-gender, heterosexual
+  →  B. Transgender, heterosexual
+     C. Cis-gender, homosexual
+   ★ D. Transgender, homosexual
+
+Model Answer: B | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 116/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following can act as an intracellular buffer to limit pH changes when the rate of glycolysis is high?
+
+Choices:
+     A. Glutamine
+     B. Glucose
+  →★ C. Carnosine
+     D. Amylase
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  67%|████████████████████████████▊              | 116/173 [00:09<00:03, 17.03it/s]
+──────────────────────────────────────────────────────────────────────
+Question 117/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A team of engineers constructing signal lights for airplanes that they can use to guide them to runways are attempting to determine the brightness needed for the pilot to be able to detect the tower at 1 mile away. They set the light to a test brightness and establish communication with an inbound pilot. When the pilot is 1 mile away from the tower, he says he cannot see the light. In terms of Signal Detection Theory, what would this be called?
+
+Choices:
+     A. Hit
+   ★ B. Miss
+  →  C. False alarm
+     D. Correct rejection
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 118/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?
+
+Choices:
+  →★ A. Subculture
+     B. Counterculture
+     C. Microculture
+     D. Culture lag
+
+Model Answer: A | Correct Answer: A
+Testing college_medicine:  68%|█████████████████████████████▎             | 118/173 [00:09<00:03, 16.97it/s]
+──────────────────────────────────────────────────────────────────────
+Question 119/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Prosthetic groups are:
+
+Choices:
+     A. required by all enzymes in the cell.
+     B. loosely bound to enzymes via hydrogen bonds.
+  →  C. sites on the enzyme molecule that permit allosteric modification of enzyme activity.
+   ★ D. tightly bound to enzymes and are required for their activity.
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 120/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Codons are composed of:
+
+Choices:
+  →★ A. triplet sequences of nucleotide bases in mRNA or DNA .
+     B. quadruplet sequences of nucleotide bases in mRNA or DNA.
+     C. triplet sequences of amino acids in polypeptide chains.
+     D. triplet sequences of deoxyribose sugars in DNA.
+
+Model Answer: A | Correct Answer: A
+Testing college_medicine:  69%|█████████████████████████████▊             | 120/173 [00:09<00:03, 17.13it/s]
+──────────────────────────────────────────────────────────────────────
+Question 121/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: In games like soccer the blood lactate concentration:
+
+Choices:
+     A. rarely increases above 3 mM.
+   ★ B. is usually lower at the end of the game than at the end of the first half.
+  →  C. is usually higher at the end of the game than at the end of the first half.
+     D. increases throughout the course of the game as the players become more fatigued.
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 122/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: All of the following are true regarding the function of neurons EXCEPT:
+
+Choices:
+     A. Hyperpolarization at the end of an action potential is one mechanism by which neurons limit the rate at which action potentials may fire.
+     B. The flow of sodium into the neuron depolarizes the membrane in the first phase of an action potential.
+  →★ C. The transmitting neuron secretes neurotransmitters into the synaptic cleft from its dendrites.
+     D. An action potential is initiated when the axon hillock reaches the threshold potential.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  71%|██████████████████████████████▎            | 122/173 [00:09<00:03, 16.65it/s]
+──────────────────────────────────────────────────────────────────────
+Question 123/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following is true?
+
+Choices:
+  →  A. Increasing the protein intake above 3 grams per kg body mass per day will stimulate muscle growth and increase strength.
+   ★ B. Creatine supplements can increase muscle strength and power.
+     C. Amino acid supplements can increase muscle strength and power.
+     D. Muscle damage is induced by shortening contractions.
+
+Model Answer: A | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 124/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following statements is false?
+
+Choices:
+     A. Ammonia is produced in repeated high intensity exercise.
+  →★ B. Muscle lactate accumulation does not begin until at least 5 seconds of intermittent muscle contractions have taken place.
+     C. Muscle phosphocreatine depletion begins in the first few seconds of high intensity exercise.
+     D. With an increasing number of repeated sprints the rate of accumulation of lactate in muscle declines.
+
+Model Answer: B | Correct Answer: B
+Testing college_medicine:  72%|██████████████████████████████▊            | 124/173 [00:09<00:02, 16.47it/s]
+──────────────────────────────────────────────────────────────────────
+Question 125/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The most rapid method to resynthesize ATP during exercise is through:
+
+Choices:
+     A. glycolysis.
+  →★ B. phosphocreatine breakdown.
+     C. tricarboxylic acid cycle (Krebs' cycle).
+     D. glycogenolysis.
+
+Model Answer: B | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 126/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The electron transport chain, which is embedded in the mitochondrial membrane, exists primarily to generate new molecules of ATP for use by the cell. This is accomplished by a positive gradient of H+ ions that are formed outside the membrane which then pass back through a specialized channel known as ATP synthase. The energy created from this phosphorylates an ATP to an ATP, known as oxidative phosphorylation. The mechanism by which H+ returns to the inside of the mitochondria is known as what?
+
+Choices:
+   ★ A. Passive transport
+     B. Passive diffusion
+  →  C. Active transport
+     D. Endocytosis
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  73%|███████████████████████████████▎           | 126/173 [00:09<00:02, 16.36it/s]
+──────────────────────────────────────────────────────────────────────
+Question 127/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following molecules will stop being produced first when oxygen is no longer supplied to the cell?
+
+Choices:
+     A. Oxaloacetate
+     B. Pyruvate
+  →★ C. Water
+     D. Adenosine triphosphate
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 128/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: As a result of substance abuse throughout adolescence, a young adult suffers from a number of psychological symptoms reflecting diminished executive functioning. Which of the following are likely true of this patient?
+I. Pathological changes to the prefrontal cortex.
+II. Increased susceptibility to auditory hallucinations.
+III. Reduced behavioral impulse control.
+
+Choices:
+     A. I only
+     B. III only
+  →★ C. I and III only
+     D. II and III only
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  74%|███████████████████████████████▊           | 128/173 [00:09<00:02, 16.61it/s]
+──────────────────────────────────────────────────────────────────────
+Question 129/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Glycogen breakdown in muscle initially results in the formation of:
+
+Choices:
+     A. glucose.
+   ★ B. glucose-1-phosphate.
+  →  C. glucose-6-phosphate.
+     D. glucose-1,6-diphosphate.
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 130/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A wrestler attempting to lose weight for a match in December commits himself to dropping 30lbs over 2 months. Which of the following is NOT a good method to restrict his caloric intake?
+
+Choices:
+     A. Study at a health smoothie store instead of a coffee shop.
+     B. Reward himself with a savory meal every Saturday for meeting his calorie goals.
+  →  C. Snap himself with a rubber band when he eats a high calorie snack.
+   ★ D. Hide snack food out of sight within his house.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  75%|████████████████████████████████▎          | 130/173 [00:09<00:02, 16.42it/s]
+──────────────────────────────────────────────────────────────────────
+Question 131/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: In an SDS-PAGE procedure, the SDS serves as a detergent. Why are the proteins treated with a detergent before being run through the electrophoresis gel?
+
+Choices:
+  →  A. To coat the proteins with a large positive charge, since amino acid side chains may have positive, negative, or neutral charges, and a large uniform charge is necessary to get good separation in the gel.
+   ★ B. To allow the electrophoresis to separate the proteins solely on the basis of the length of the primary sequence.
+     C. To prevent the protein from denaturing so that the electrophoresis can accurately resolve the proteins on the basis of tertiary structure.
+     D. To break the intramolecular bonds holding the tertiary and primary structure of the protein together, thereby generating linear fragments that may be sorted on size.
+
+Model Answer: A | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 132/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: For very high force contractions lasting 1-2 seconds, the initial energy source is from:
+
+Choices:
+     A. Glycolysis.
+     B. creatine phosphorylation.
+  →  C. phosphocreatine stores.
+   ★ D. ATP stores.
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  76%|████████████████████████████████▊          | 132/173 [00:10<00:02, 14.21it/s]
+──────────────────────────────────────────────────────────────────────
+Question 133/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following factors does not influence success in sport?
+
+Choices:
+     A. Ability to tolerate heavy training without succumbing to illness or injury.
+  →  B. Tactics.
+     C. The diet.
+   ★ D. Ingestion of carnitine during exercise.
+
+Model Answer: B | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 134/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm
+
+Choices:
+   ★ A. I only
+     B. II only
+     C. III only
+  →  D. I and II
+
+Model Answer: D | Correct Answer: A
+Testing college_medicine:  77%|█████████████████████████████████▎         | 134/173 [00:10<00:02, 15.34it/s]
+──────────────────────────────────────────────────────────────────────
+Question 135/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A transmembrane protein being isolated in the laboratory is found to be composed of four different amino acids in varying quantity. They are, in order of frequency, glycine, tyrosine, arginine, and isoleucine. Of these amino acids, which is most likely to be inside the transmembrane domain?
+
+Choices:
+  →  A. Glycine
+     B. Tyrosine
+     C. Arginine
+   ★ D. Isoleucine
+
+Model Answer: A | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 136/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following nucleotide bases is not found in RNA?
+
+Choices:
+  →★ A. Thymine
+     B. Adenine
+     C. Uracil
+     D. Guanine
+
+Model Answer: A | Correct Answer: A
+Testing college_medicine:  79%|█████████████████████████████████▊         | 136/173 [00:10<00:02, 15.89it/s]
+──────────────────────────────────────────────────────────────────────
+Question 137/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Fast-twitch fibres contain:
+
+Choices:
+  →  A. a relatively large number of mitochondria and low ATPase activity.
+     B. a relatively small number of mitochondria and low ATPase activity.
+   ★ C. a relatively small number of mitochondria and high ATPase activity.
+     D. a relatively large number of mitochondria and high ATPase activity.
+
+Model Answer: A | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 138/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The conversion of one molecule of glucose to two molecules of pyruvate results in the net formation of:
+
+Choices:
+     A. six molecules of water.
+   ★ B. two molecules of ATP.
+  →  C. three molecules of ATP.
+     D. thirty-eight molecules of ATP.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  80%|██████████████████████████████████▎        | 138/173 [00:10<00:02, 16.39it/s]
+──────────────────────────────────────────────────────────────────────
+Question 139/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Acute Myeloid Leukemia is a malignant cancer in which myeloid progenitor cells become rapidly dividing and retain their semi-stem cell state. Under normal circumstances, which of the following cell types would arise from this stem cell?
+
+Choices:
+     A. NK cell
+   ★ B. Platelet
+  →  C. T cell
+     D. Lymphoid progenitor
+
+Model Answer: C | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 140/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Lactate and hydrogen ions leave the muscle:
+
+Choices:
+  →  A. via a cotransport mechanism with carnosine.
+     B. via an active transport mechanism.
+   ★ C. via a protein transporter molecule.
+     D. by simple diffusion.
+
+Model Answer: A | Correct Answer: C
+Testing college_medicine:  81%|██████████████████████████████████▊        | 140/173 [00:10<00:02, 16.10it/s]
+──────────────────────────────────────────────────────────────────────
+Question 141/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: There are five stages of mitosis that must be carried out correctly for a cell to properly divide. Match the stage of mitosis with its proper component:
+Prophase — Dissolution of nucleoli
+
+Choices:
+   ★ A. Metaphase — Formation of two distinct nuclear membranes
+     B. Cytokinesis — Separation of sister chromatids to their respective poles
+  →  C. Telophase — Formation of the equatorial plate
+     D. Anaphase — Separation of the cytoplasm and organelles
+
+Model Answer: C | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 142/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: A study examined admissions to exceptionally selective colleges. When examining the correlates of admission acceptance, two obvious factors that strongly correlated with admissions were GPA and standardized test scores, with correlation values of +0.41 and +0.55 respectively. However, the study also demonstrated that those students who had social networks that overlapped with the alumni networks of the selective colleges were even more likely to be admitted, with a correlation between social network and alumni network of +0.61. This correlation demonstrates:
+
+Choices:
+     A. the value of cultural capital.
+     B. a meritocracy. 
+  →★ C. he value of social capital.
+     D. a false association.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  82%|███████████████████████████████████▎       | 142/173 [00:10<00:02, 15.36it/s]
+──────────────────────────────────────────────────────────────────────
+Question 143/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A patient comes into the hospital after being bit by a dog who he stated was “acting crazy”. The wound is open and bleeding. Animal control captured the dog and said that it was foaming at the mouth and extremely aggressive. Suspecting a rabies infection, the patient is given a serum that contains rabies antibodies that were grown inside a horse. This is an example of what kind of immunity?
+
+Choices:
+   ★ A. Passive
+  →  B. Active
+     C. Natural
+     D. Artificial
+
+Model Answer: B | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 144/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The World Systems Theory divides the world as a unit into three subcategories: core countries, periphery countries, and semi-periphery countries. Which of the following answers correlates best with semi-periphery countries?
+
+Choices:
+     A. Strong central government.
+  →  B. An economy centralized around one natural resource.
+   ★ C. A diversified and developed economy.
+     D. Small percentage of very high class individuals.
+
+Model Answer: B | Correct Answer: C
+Testing college_medicine:  83%|███████████████████████████████████▊       | 144/173 [00:10<00:01, 15.39it/s]
+──────────────────────────────────────────────────────────────────────
+Question 145/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Kinase reactions:
+
+Choices:
+     A. inhibit ATP breakdown.
+  →★ B. involve the addition or removal of a phosphate group.
+     C. involve the addition or removal of a ketone group.
+     D. involve the addition or removal of an amino acid to a polypeptide chain.
+
+Model Answer: B | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 146/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The main fate of lactate that leaves muscle and enters the circulation is:
+
+Choices:
+     A. conversion to urea in the liver.
+     B. conversion to glucose in the heart.
+     C. excretion via the kidneys.
+  →★ D. uptake and oxidation by other tissues.
+
+Model Answer: D | Correct Answer: D
+Testing college_medicine:  84%|████████████████████████████████████▎      | 146/173 [00:10<00:01, 16.38it/s]
+──────────────────────────────────────────────────────────────────────
+Question 147/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The ATP store in muscle can only supply energy in high intensity exercise for about:
+
+Choices:
+  →  A. 2 milliseconds.
+   ★ B. 2 seconds.
+     C. 10 seconds.
+     D. 20 seconds.
+
+Model Answer: A | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 148/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Glycogen breakdown in exercising muscle is activated by:
+
+Choices:
+  →  A. insulin.
+     B. cortisol.
+     C. increased pH.
+   ★ D. none of the above.
+
+Model Answer: A | Correct Answer: D
+Testing college_medicine:  86%|████████████████████████████████████▊      | 148/173 [00:11<00:01, 17.18it/s]
+──────────────────────────────────────────────────────────────────────
+Question 149/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: According to attachment theory, which of the following children is most likely to attach to a male psychologist, previously unknown to the child, in the course of a psychological study?
+
+Choices:
+   ★ A. A two month old female infant raised in a safe, stable environment
+  →  B. A five month old male infant raised in a safe, stable environment
+     C. An eight month old male infant raised by a single caregiver who frequently neglect the child
+     D. A thirteen month old female infant raised by two caregivers who occasionally neglect the child
+
+Model Answer: B | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 150/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Creatine is synthesized from:
+
+Choices:
+     A. amino acids in the muscles.
+  →★ B. amino acids in the liver.
+     C. amino acids in the kidneys.
+     D. creatinine in the kidneys.
+
+Model Answer: B | Correct Answer: B
+Testing college_medicine:  87%|█████████████████████████████████████▎     | 150/173 [00:11<00:01, 16.94it/s]
+──────────────────────────────────────────────────────────────────────
+Question 151/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The hypothalamus controls the stress response of the body by releasing CRF, which leads to eventual release of cortisol, the body’s stress hormone, systemically. This trigger is eventually suppressed by which mechanism?
+
+Choices:
+     A. Constriction of blood flow to the adrenal gland.
+     B. Exhaustion of the body’s store of CRF.
+  →★ C. Negative feedback loop of cortisol.
+     D. Release of CRF-inhibitory factor.
+
+Model Answer: C | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 152/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:
+I. Self-esteem hypothesis
+II. Contact hypothesis
+III. Hypothesis
+IV. Legal hypothesis
+
+Choices:
+     A. I, II, and III
+     B. II, III, and IV
+  →  C. I, III, and IV
+   ★ D. I, II, and IV
+
+Model Answer: C | Correct Answer: D
+Testing college_medicine:  88%|█████████████████████████████████████▊     | 152/173 [00:11<00:01, 14.47it/s]
+──────────────────────────────────────────────────────────────────────
+Question 153/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The energy for all forms of muscle contraction is provided by:
+
+Choices:
+  →★ A. ATP.
+     B. ADP.
+     C. phosphocreatine.
+     D. oxidative phosphorylation.
+
+Model Answer: A | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 154/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: How can several different proteins be produced from the same gene?
+
+Choices:
+     A. By selective transcription of different parts of the DNA in the gene.
+     B. By doubling or tripling the length of the mRNA molecule produced from the primary transcript.
+  →★ C. The primary transcripts of many genes can be spliced in various ways to produce different mRNAs, a process known as alternative RNA splicing.
+     D. By splicing of the mRNA molecule after it has been formed from the primary transcript.
+
+Model Answer: C | Correct Answer: C
+Testing college_medicine:  89%|██████████████████████████████████████▎    | 154/173 [00:11<00:01, 15.07it/s]
+──────────────────────────────────────────────────────────────────────
+Question 155/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Phosphocreatine in the muscle cell is found in:
+
+Choices:
+  →  A. the mitochondria.
+     B. all subcellular compartments.
+     C. the sarcolemma.
+   ★ D. the cytoplasm.
+
+Model Answer: A | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 156/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: A scientist using mouse models to determine the response of blood hormones to large levels of glucose in the body discovers a new hormone not previously described. According to his data, this hormone is found both inside and out of cells when carrying out its function, increase the amount of nucleic acid in the cell while functioning, and are derived from a structure containing four hydroxycarbon rings. This will likely be categorized as which type of hormone?
+
+Choices:
+     A. Enzymatic
+  →★ B. Steroid
+     C. Peptide
+     D. Amino acid
+
+Model Answer: B | Correct Answer: B
+Testing college_medicine:  90%|██████████████████████████████████████▊    | 156/173 [00:11<00:01, 15.45it/s]
+──────────────────────────────────────────────────────────────────────
+Question 157/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The coding sequences of genes are called:
+
+Choices:
+     A. extrons.
+  →★ B. exons.
+     C. introns.
+     D. codons.
+
+Model Answer: B | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 158/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Each of the following is an example of the transmission of knowledge through symbolic culture EXCEPT:
+I. A young macaque monkey learning to rinse off food in the ocean from an older monkey, even when the food is not covered in dirt or sand.
+II. A child learning the rules of baseball from a parent.
+III. A new group of inductees in a military organization experiencing hazing rituals from older students, which they then later carry out on new recruits.
+
+Choices:
+   ★ A. I only
+     B. III only
+  →  C. I and III only
+     D. II and III only
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  91%|███████████████████████████████████████▎   | 158/173 [00:11<00:00, 15.42it/s]
+──────────────────────────────────────────────────────────────────────
+Question 159/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: One of the many reasons that the eukaryotic cell can possess so much information in its DNA is the ability to condense coding regions when they are not being expressed. When acting on DNA, which of the following processes will usually lead to a decrease in gene expression?
+
+Choices:
+     A. Increased histone acetyltransferase activity
+  →  B. Decrease in histone deacetyltransferase activity
+   ★ C. Increase in methylation activity
+     D. Increase in heterochromatin:euchromatin ratio
+
+Model Answer: B | Correct Answer: C
+
+──────────────────────────────────────────────────────────────────────
+Question 160/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Anaerobic metabolism refers to the generation of ATP:
+
+Choices:
+     A. without the involvement of ADP.
+     B. without the use of glycogen.
+   ★ C. without the use of oxygen.
+  →  D. in the absence of available oxygen.
+
+Model Answer: D | Correct Answer: C
+Testing college_medicine:  92%|███████████████████████████████████████▊   | 160/173 [00:11<00:00, 15.77it/s]
+──────────────────────────────────────────────────────────────────────
+Question 161/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following molecules does not form part of DNA?
+
+Choices:
+     A. Purine
+     B. Pyrimidine
+     C. Deoxyribose
+  →★ D. Amino acid
+
+Model Answer: D | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 162/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: How many electrons does gold (Au) possess that have a quantum number l = 2?
+
+Choices:
+     A. 9
+     B. 23
+   ★ C. 29
+  →  D. 79
+
+Model Answer: D | Correct Answer: C
+Testing college_medicine:  94%|████████████████████████████████████████▎  | 162/173 [00:11<00:00, 16.39it/s]
+──────────────────────────────────────────────────────────────────────
+Question 163/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: Sauna use, sometimes referred to as "sauna bathing," is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+According to the article, which of the following is NOT a benefit of sauna use?
+
+Choices:
+     A. Decreased risk of heart attacks.
+     B. Increase in stroke volume.
+     C. Improved mental health.
+  →★ D. Decreased rate of erectile dysfunction.
+
+Model Answer: D | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 164/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: With an increasing number of sprints the:
+
+Choices:
+     A. anaerobic contribution progressively increases.
+     B. pH of the muscle falls below 6.0.
+     C. blood glucose concentration falls below 3 mmol/L.
+  →★ D. relative contribution of aerobic metabolism increases.
+
+Model Answer: D | Correct Answer: D
+Testing college_medicine:  95%|████████████████████████████████████████▊  | 164/173 [00:12<00:01,  7.96it/s]
+──────────────────────────────────────────────────────────────────────
+Question 165/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Fire hoses always have a nozzle on the end of the hose, which in part works by decreasing the area of the water exiting the fire hydrant to create a more forceful stream. If the starting velocity of water from a fire hydrant is 2 m/s, pressure is kept constant, and the end of the nozzle is 1/3 the area of the start of the hose, what is the final velocity of water as it exits?
+
+Choices:
+     A. 2 m/s
+     B. 8 m/s
+  →  C. 5 m/s
+   ★ D. 6 m/s
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 166/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Pairs of electrons carried in the form, FADH2 and NADH+H, collectively contain enough free energy to rephosphorylate:
+
+Choices:
+     A. 6 ATP.
+   ★ B. 5 ATP.
+  →  C. 4 ATP.
+     D. 3 ATP.
+
+Model Answer: C | Correct Answer: B
+Testing college_medicine:  96%|█████████████████████████████████████████▎ | 166/173 [00:12<00:00,  9.56it/s]
+──────────────────────────────────────────────────────────────────────
+Question 167/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The energy released from the breakdown of the high-energy phosphates, ATP and phosphocreatine, can sustain maximal exertion exercise for about:
+
+Choices:
+     A. 1-2 seconds.
+  →★ B. 5-10 seconds.
+     C. 30-40 seconds.
+     D. 50-60 seconds.
+
+Model Answer: B | Correct Answer: B
+
+──────────────────────────────────────────────────────────────────────
+Question 168/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The sex of a child is dictated by the inheritance of:
+
+Choices:
+     A. the number of X chromosomes from the mother.
+  →  B. a recessive allele on the X chromosome.
+     C. a single Y chromosome from the mother.
+   ★ D. a single Y chromosome from the father.
+
+Model Answer: B | Correct Answer: D
+Testing college_medicine:  97%|█████████████████████████████████████████▊ | 168/173 [00:12<00:00, 11.01it/s]
+──────────────────────────────────────────────────────────────────────
+Question 169/173 [✓ CORRECT]
+──────────────────────────────────────────────────────────────────────
+Q: The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:
+
+Choices:
+  →★ A. frequently rises by 1 - 3 mM.
+     B. remains relatively unchanged.
+     C. frequently falls by 1 - 3 mM.
+     D. falls to hypoglycaemic levels.
+
+Model Answer: A | Correct Answer: A
+
+──────────────────────────────────────────────────────────────────────
+Question 170/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: During DNA replication, mistakes are coded into the leading strand about once every 100,000/1 million copies. This DNA is subject to proofreading by several mechanisms. If a mistake is noted and the incorrect base is removed shortly following the time RNA primer is removed, this would most likely be the work of which repair mechanism?
+
+Choices:
+   ★ A. DNA polymerase I
+     B. DNA polymerase III
+  →  C. Mismatch repair mechanism
+     D. Endonuclease repair
+
+Model Answer: C | Correct Answer: A
+Testing college_medicine:  98%|██████████████████████████████████████████▎| 170/173 [00:12<00:00, 12.22it/s]
+──────────────────────────────────────────────────────────────────────
+Question 171/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Which of the following statements is false?
+
+Choices:
+     A. Phosphofructokinase is the rate limiting enzyme in glycolysis.
+     B. Phosphorylase activity is higher in Type II fibres than in Type I fibres.
+  →  C. Endurance training increases the amount of TCA cycle enzymes in muscle.
+   ★ D. Oxygen is consumed in the TCA cycle.
+
+Model Answer: C | Correct Answer: D
+
+──────────────────────────────────────────────────────────────────────
+Question 172/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: Each of the following are aspects of the McDonaldization of Society EXCEPT:
+
+Choices:
+     A. Rationalization of decisions into cost/benefit analysis structures and away from traditional modes of thinking
+     B. Bureaucratic organization that formalizes well-establish division of labor and impersonal structures
+   ★ C. A dissolution of hierarchical modes of authority into collaborative teambased decision protocols
+  →  D. An intense effort on achieving sameness across diverse markets
+
+Model Answer: D | Correct Answer: C
+Testing college_medicine:  99%|██████████████████████████████████████████▊| 172/173 [00:12<00:00, 13.08it/s]
+──────────────────────────────────────────────────────────────────────
+Question 173/173 [✗ WRONG]
+──────────────────────────────────────────────────────────────────────
+Q: The descending loop of Henle of the nephron of the kidney is permeable to which of the following substances?
+
+Choices:
+  →  A. Na+
+   ★ B. H2O
+     C. K+
+     D. Cl-
+
+Model Answer: A | Correct Answer: B
+Testing college_medicine: 100%|███████████████████████████████████████████| 173/173 [00:12<00:00, 13.31it/s]
+
+✓ Result: 78/173 correct = 45.09%
+  Subject timing:
+  Real Time (Wall Clock): 12.96 seconds
+  CPU Time: 10.19 seconds
+  GPU Time: N/A (MPS does not support precise GPU timing)
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: Qwen/Qwen2.5-0.5B
+None (full precision)
+Total Subjects: 10
+Total Questions: 1369
+Total Correct: 586
+Overall Accuracy: 42.80%
+
+──────────────────────────────────────────────────────────────────────
+TIMING INFORMATION
+──────────────────────────────────────────────────────────────────────
+  Real Time (Wall Clock): 1.47 minutes (88.48 seconds)
+  CPU Time: 1.32 minutes (78.92 seconds)
+  GPU Time: N/A (MPS does not support precise GPU timing)
+
+  Total Wall Clock Duration: 1.55 minutes (93.24 seconds)
+
+  Throughput: 15.47 questions/second
+  Average time per question: 0.06 seconds
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260116_120144.json
+
+📊 Top 5 Subjects:
+  1. clinical_knowledge: 52.08%
+  2. astronomy: 50.00%
+  3. business_ethics: 48.00%
+  4. anatomy: 45.19%
+  5. college_medicine: 45.09%
+
+📉 Bottom 5 Subjects:
+  1. college_computer_science: 38.00%
+  2. college_biology: 37.50%
+  3. abstract_algebra: 36.00%
+  4. college_chemistry: 32.00%
+  5. college_mathematics: 25.00%
+
+✅ Evaluation complete!
+
+Step 6
+Major Pattern Discovered is OLMo has extreme 'C' bias
+There's significant overlap - 32.8% of questions both models got wrong with the exact same wrong answer.
+
+
+
+
+
+
