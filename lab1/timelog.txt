@@ -1878,9 +1878,6 @@ TIMING INFORMATION
 
 ✅ Evaluation complete!
 
-Step 6
-Major Pattern Discovered is OLMo has extreme 'C' bias
-There's significant overlap - 32.8% of questions both models got wrong with the exact same wrong answer.
 
 
 
