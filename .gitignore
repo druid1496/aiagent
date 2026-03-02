@@ -1,0 +1,34 @@
+# Large files
+lab5/Corpora.zip
+lab6/vedio.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+myenv*/
+.venv/
+
+# Checkpoints and databases
+*.db
+*_checkpoints.db
+
+# OS files
+.DS_Store
+*.swp
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files (if any large ones)
+*.bin
+*.safetensors
