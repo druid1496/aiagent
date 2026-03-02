@@ -1,0 +1,5 @@
+ollama
+langgraph
+langgraph-checkpoint-sqlite
+Pillow
+opencv-python

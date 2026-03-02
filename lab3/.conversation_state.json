@@ -1,0 +1,125 @@
+{
+  "conversation-1": {
+    "thread_id": "conversation-1",
+    "messages": [
+      {
+        "type": "HumanMessage",
+        "content": "hello",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "Hello! How can I assist you today?",
+        "tool_calls": []
+      },
+      {
+        "type": "HumanMessage",
+        "content": "Is this the first talk?",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "Yes, this is our first conversation! How can I help you today?",
+        "tool_calls": []
+      },
+      {
+        "type": "HumanMessage",
+        "content": "No",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "I apologize for the misunderstanding. Can you please clarify what you mean?",
+        "tool_calls": []
+      },
+      {
+        "type": "HumanMessage",
+        "content": "I mean do you know I have recover from another conversation",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "I see! You\u2019re referring to a previous conversation. I don\u2019t have the ability to recall past interactions, as each conversation is treated independently. How can I assist you based on your previous discussions?",
+        "tool_calls": []
+      },
+      {
+        "type": "HumanMessage",
+        "content": "Get the weather for San Francisco, then analyze that weather description to get word statistics, count how many 'y' letters are in the weather description, and calculate the area of a circle with radius equal to the word count from the statistics.",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "get_weather",
+            "args": {
+              "location": "San Francisco"
+            },
+            "id": "call_yAQ8OjdDpFGhsfOVKF0S8TZl",
+            "type": "tool_call"
+          }
+        ]
+      },
+      {
+        "type": "ToolMessage",
+        "content": "Sunny, 72\u00b0F",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "",
+        "tool_calls": [
+          {
+            "name": "word_statistics",
+            "args": {
+              "text": "Sunny, 72\u00b0F"
+            },
+            "id": "call_ptkPqy4PbEn5bEEE5Y1h8hgF",
+            "type": "tool_call"
+          },
+          {
+            "name": "count_letter",
+            "args": {
+              "text": "Sunny, 72\u00b0F",
+              "letter": "y"
+            },
+            "id": "call_gP5uau1giIUMdF7Ed78CENcu",
+            "type": "tool_call"
+          },
+          {
+            "name": "calculator",
+            "args": {
+              "geometric_type": "circle",
+              "params_list": [
+                2
+              ]
+            },
+            "id": "call_BtAps7QSxaVbPYI7dJRSrDRS",
+            "type": "tool_call"
+          }
+        ]
+      },
+      {
+        "type": "ToolMessage",
+        "content": "{\"word_count\": 2, \"character_count\": 11, \"character_count_no_spaces\": 10, \"average_word_length\": 5.0, \"most_common_words\": [[\"sunny\", 1], [\"72\\u00b0f\", 1]]}",
+        "tool_calls": null
+      },
+      {
+        "type": "ToolMessage",
+        "content": "1",
+        "tool_calls": null
+      },
+      {
+        "type": "ToolMessage",
+        "content": "12.566370614359172",
+        "tool_calls": null
+      },
+      {
+        "type": "AIMessage",
+        "content": "Here's the information you requested for the weather in San Francisco:\n\n1. **Weather Description**: Sunny, 72\u00b0F\n\n2. **Word Statistics**:\n   - Word Count: 2\n   - Character Count: 11\n   - Character Count (without spaces): 10\n   - Average Word Length: 5.0\n   - Most Common Words: \n     - \"sunny\": 1 occurrence\n     - \"72\u00b0F\": 1 occurrence\n\n3. **Count of 'y' Letters**: 1\n\n4. **Area of Circle with Radius 2**: Approximately 12.57 square units.\n\nIf you need further assistance or have more questions, feel free to ask!",
+        "tool_calls": []
+      }
+    ]
+  }
+}

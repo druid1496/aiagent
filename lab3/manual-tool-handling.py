@@ -5,7 +5,8 @@ Students will see how tool calling works under the hood.
 
 import json
 from openai import OpenAI
-
+import math
+import ast
 # ============================================
 # PART 1: Define Your Tools
 # ============================================
@@ -21,7 +22,36 @@ def get_weather(location: str) -> str:
     }
     return weather_data.get(location, f"Weather data not available for {location}")
 
-
+def calculator(geometric_type:str, params_list:list[float]) -> float:
+    """Calculate the area of a geometric shape.
+    The geometric type can be circle, rectangle, or triangle. 
+    The params_list is a list of floats that represent the parameters of the geometric shape.
+    If params_list is a string, it will be safely parsed using ast.literal_eval."""
+    # Safely parse params_list if it's a string
+    if isinstance(params_list, str):
+        try:
+            params_list = ast.literal_eval(params_list)
+        except (ValueError, SyntaxError) as e:
+            return f"Error: Could not parse params_list: {e}"
+    
+    # Ensure params_list is a list
+    if not isinstance(params_list, list):
+        return f"Error: params_list must be a list, got {type(params_list)}"
+    
+    # Convert to floats
+    try:
+        params_list = [float(p) for p in params_list]
+    except (ValueError, TypeError) as e:
+        return f"Error: Could not convert params to numbers: {e}"
+    
+    if geometric_type == "circle":
+        return math.pi * params_list[0] ** 2
+    elif geometric_type == "rectangle":
+        return params_list[0] * params_list[1]
+    elif geometric_type == "triangle":
+        return 0.5 * params_list[0] * params_list[1]
+    else:
+        return f"Error: Unknown geometric type {geometric_type}"
 # ============================================
 # PART 2: Describe Tools to the LLM
 # ============================================
@@ -44,8 +74,32 @@ tools = [
                 "required": ["location"]
             }
         }
-    }
+    },
     # TODO: Students will add a second tool here (e.g., calculator)
+    {
+        "type": "function",
+        "function": {
+            "name": "calculator",
+            "description": "Calculate the area of a geometric shape",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "geometric_type": {
+                        "type": "string",
+                        "description": "The type of geometric shape, e.g. circle, rectangle, or triangle"
+                    },
+                    "params_list": {
+                        "type": "array",
+                        "description": "The list of parameters for the geometric shape",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "required": ["geometric_type", "params_list"]
+            }
+        }
+    }
 ]
 
 
@@ -103,10 +157,16 @@ def run_agent(user_query: str):
                 # In a real system, you'd use a dictionary lookup
                 if function_name == "get_weather":
                     result = get_weather(**function_args)
+                elif function_name == "calculator":
+                    result = calculator(**function_args)
                 else:
                     result = f"Error: Unknown function {function_name}"
                 
                 print(f"  Result: {result}")
+                
+                # Format the result as JSON string if it's not already a string
+                if not isinstance(result, str):
+                    result = json.dumps(result)
                 
                 # Add the tool result back to the conversation
                 messages.append({

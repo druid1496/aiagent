@@ -7,3 +7,6 @@ They use the function route_after_input and conditional edge to handle special i
 The difference is that the react_agent just wraps using tools into the model. The model_with_tools is similar to react_agent
 ## Q4
 I think if many tools have some similar parts, these tools can be reused. I think toolnode can form as a hierarchical structure that may be better than reactagent
+
+2 hour project
+The github website is https://github.com/alevistorte/Educational-YouTube-Video-Analyzer

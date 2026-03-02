@@ -1,0 +1,91 @@
+============================================================
+📊 VIDEO SURVEILLANCE REPORT
+============================================================
+
+Video: vedio.mp4
+Frame interval: 2.0 seconds
+Total frames analyzed: 62
+
+------------------------------------------------------------
+PERSON DETECTION EVENTS
+------------------------------------------------------------
+🚶➡️ ENTER at 00:25 (frame 767)
+🚶⬅️ EXIT at 00:29 (frame 885)
+🚶➡️ ENTER at 00:31 (frame 944)
+🚶⬅️ EXIT at 00:33 (frame 1003)
+🚶➡️ ENTER at 01:01 (frame 1829)
+🚶⬅️ EXIT at 01:02 (frame 1888)
+
+------------------------------------------------------------
+FRAME-BY-FRAME SUMMARY
+------------------------------------------------------------
+[00:00]    Empty
+[00:01]    Empty
+[00:03]    Empty
+[00:05]    Empty
+[00:07]    Empty
+[00:09]    Empty
+[00:11]    Empty
+[00:13]    Empty
+[00:15]    Empty
+[00:17]    Empty
+[00:19]    Empty
+[00:21]    Empty
+[00:23]    Empty
+[00:25] 👤 Person
+[00:27] 👤 Person
+[00:29]    Empty
+[00:31] 👤 Person
+[00:33]    Empty
+[00:35]    Empty
+[00:37]    Empty
+[00:39]    Empty
+[00:41]    Empty
+[00:43]    Empty
+[00:45]    Empty
+[00:47]    Empty
+[00:49]    Empty
+[00:51]    Empty
+[00:53]    Empty
+[00:55]    Empty
+[00:57]    Empty
+[00:59]    Empty
+[01:01] 👤 Person
+[01:02]    Empty
+[01:04]    Empty
+[01:06]    Empty
+[01:08]    Empty
+[01:10]    Empty
+[01:12]    Empty
+[01:14]    Empty
+[01:16]    Empty
+[01:18]    Empty
+[01:20]    Empty
+[01:22]    Empty
+[01:24]    Empty
+[01:26]    Empty
+[01:28]    Empty
+[01:30]    Empty
+[01:32]    Empty
+[01:34]    Empty
+[01:36]    Empty
+[01:38]    Empty
+[01:40]    Empty
+[01:42]    Empty
+[01:44]    Empty
+[01:46]    Empty
+[01:48]    Empty
+[01:50]    Empty
+[01:52]    Empty
+[01:54]    Empty
+[01:56]    Empty
+[01:58]    Empty
+[02:00]    Empty
+
+------------------------------------------------------------
+STATISTICS
+------------------------------------------------------------
+Frames with person: 4 (6.5%)
+Frames without person: 58 (93.5%)
+Total events: 6
+============================================================
