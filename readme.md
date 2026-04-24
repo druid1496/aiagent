@@ -1,0 +1,1 @@
+The github repository for the final project is at https://github.com/druid1496/philosophyagent 
